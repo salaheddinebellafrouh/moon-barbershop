@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Moon Barbershop — Menu & Tarifs</title>
+  <meta name="description" content="Moon Barbershop — coupe, barbe, soins visage, soins cheveux et coloration. Ouvert 7j/7 de 10:30 à 22:30.">
+  <meta name="theme-color" content="#111213">
+  <meta property="og:title" content="Moon Barbershop — Menu & Tarifs">
+  <meta property="og:description" content="Coupe • Barbe • Soins • Coloration. Ouvert 7j/7, 10:30 – 22:30.">
+  <meta property="og:image" content="images/menu.jpg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="rails" aria-hidden="true"></div>
+
+  <header class="hero wrap">
+    <svg class="crest" viewBox="0 0 600 410" role="img" aria-labelledby="crest-title">
+      <title id="crest-title">Moon Barbershop — Offre Moon</title>
+      <defs>
+        <linearGradient id="holo" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="reflect">
+          <stop offset="0" stop-color="#f6c7e1"/>
+          <stop offset=".25" stop-color="#b9e7f6"/>
+          <stop offset=".5" stop-color="#d9cbff"/>
+          <stop offset=".75" stop-color="#cdf5dc"/>
+          <stop offset="1" stop-color="#f8e2b4"/>
+          <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="600 0" dur="9s" repeatCount="indefinite"/>
+        </linearGradient>
+        <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f3dc9a"/>
+          <stop offset=".55" stop-color="#c9a65c"/>
+          <stop offset="1" stop-color="#8f6d34"/>
+        </linearGradient>
+        <filter id="glow" x="-10%" y="-30%" width="120%" height="160%">
+          <feGaussianBlur stdDeviation="3" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <path id="arc" d="M40 250 Q300 -130 560 250"/>
+      </defs>
+
+      <text class="crest-title" filter="url(#glow)">
+        <textPath href="#arc" startOffset="50%" text-anchor="middle">MOON BARBERSHOP</textPath>
+      </text>
+
+      <!-- emblem -->
+      <g class="emblem">
+        <circle cx="300" cy="270" r="118" fill="rgba(0,0,0,.35)" stroke="url(#gold)" stroke-width="4"/>
+        <circle cx="300" cy="270" r="111" fill="none" stroke="#c9a65c" stroke-width="1.2" stroke-dasharray="2 7" stroke-linecap="round"/>
+        <circle cx="300" cy="270" r="104" fill="none" stroke="#c9a65c" stroke-opacity=".6" stroke-width="1.2"/>
+        <g fill="url(#gold)">
+          <path d="M287 304 L317 198 L326 160 L311 199 L279 302 Z"/>
+          <path d="M313 304 L283 198 L274 160 L289 199 L321 302 Z"/>
+        </g>
+        <g fill="none" stroke="url(#gold)" stroke-width="5">
+          <circle cx="276" cy="324" r="16"/>
+          <circle cx="324" cy="324" r="16"/>
+        </g>
+        <path d="M150 250 H450 L434 271 L450 292 H150 L166 271 Z" fill="#141414" stroke="url(#gold)" stroke-width="3"/>
+        <path d="M168 256 H432" stroke="#c9a65c" stroke-opacity=".5" stroke-width="1"/>
+        <path d="M168 286 H432" stroke="#c9a65c" stroke-opacity=".5" stroke-width="1"/>
+        <text x="300" y="283" class="banner-text">OFFRE MOON</text>
+      </g>
+
+      <g class="stars" fill="#f3e3b3">
+        <path class="star s1" d="M70 300 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z"/>
+        <path class="star s2" d="M528 300 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/>
+        <path class="star s3" d="M120 360 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z"/>
+        <path class="star s4" d="M478 366 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"/>
+      </g>
+    </svg>
+
+    <p class="tagline">Coupe <span>•</span> Barbe <span>•</span> Gommage <span>•</span> Shampooing</p>
+    <p class="offer"><span class="offer-label">L'offre Moon</span><span class="offer-price">70 <small>DH</small></span></p>
+  </header>
+
+  <nav class="chips" aria-label="Catégories">
+    <div class="chips-inner">
+      <a class="chip" href="#coupe">Coupe</a>
+      <a class="chip" href="#barbe">Barbe</a>
+      <a class="chip" href="#visage">Soin visage</a>
+      <a class="chip" href="#cheveux">Soin cheveux</a>
+      <a class="chip" href="#coloration">Coloration</a>
+      <a class="chip" href="#packs">Nos packs</a>
+      <a class="chip" href="#infos">Infos</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="menu-grid" aria-label="Menu">
+      <article class="card reveal" id="coupe">
+        <h2 class="brush">Coupe</h2>
+        <ul class="items">
+          <li><span class="n">Coupe + Shampooing</span><i></i><b>40 <small>DH</small></b></li>
+          <li><span class="n">Coupe + Barbe</span><i></i><b>50 <small>DH</small></b></li>
+          <li><span class="n">Coupe enfant <em class="note">(-10 ans)</em></span><i></i><b>30 <small>DH</small></b></li>
+        </ul>
+      </article>
+
+      <article class="card reveal" id="barbe">
+        <h2 class="brush">Barbe</h2>
+        <ul class="items">
+          <li><span class="n">Taille &amp; Contours</span><i></i><b>30 <small>DH</small></b></li>
+          <li><span class="n">Coloration Barbe</span><i></i><b>70 <small>DH</small></b></li>
+        </ul>
+      </article>
+
+      <article class="card reveal" id="visage">
+        <h2 class="brush">Soin visage</h2>
+        <ul class="items">
+          <li><span class="n">Black Mask</span><i></i><b>40 <small>DH</small></b></li>
+          <li><span class="n">Gommage Vapeur</span><i></i><b>50 <small>DH</small></b></li>
+          <li><span class="n">Soin Classique</span><i></i><b>100 <small>DH</small></b></li>
+          <li><span class="n">Soin Byphasse</span><i></i><b>150 <small>DH</small></b></li>
+          <li><span class="n">Hydrafacial Byphasse</span><i></i><b>400 <small>DH</small></b></li>
+          <li><span class="n">Soin Academy</span><i></i><b>350 <small>DH</small></b></li>
+          <li><span class="n">Hydrafacial Academy</span><i></i><b>500 <small>DH</small></b></li>
+          <li><span class="n">Épilation <em class="note">(Nez / Oreilles)</em></span><i></i><b>40 <small>DH</small></b></li>
+        </ul>
+      </article>
+
+      <article class="card reveal" id="cheveux">
+        <h2 class="brush">Soin cheveux</h2>
+        <ul class="items">
+          <li><span class="n">Protéine AMAZONAS</span><i></i><b>200 <small>DH</small></b></li>
+          <li><span class="n">Protéine COCOMOCA</span><i></i><b>300 <small>DH</small></b></li>
+          <li><span class="n">Protéine BLACK DIAMOND</span><i></i><b>400 <small>DH</small></b></li>
+          <li><span class="n">Protéine BLACK DIAMOND <em class="tag">Premium</em></span><i></i><b>700 <small>DH</small></b></li>
+        </ul>
+      </article>
+
+      <article class="card reveal" id="coloration">
+        <h2 class="brush">Coloration</h2>
+        <ul class="items">
+          <li><span class="n">Coloration Cheveux Noirs</span><i></i><b>150 <small>DH</small></b></li>
+          <li><span class="n">Mèches Silver</span><i></i><b>300 <small>DH</small></b></li>
+          <li><span class="n">Coloration Silver Complète</span><i></i><b>400 <small>DH</small></b></li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="packs reveal" id="packs" aria-labelledby="packs-title">
+      <div class="packs-head">
+        <span class="pole" aria-hidden="true"><span></span></span>
+        <h2 id="packs-title">Nos packs</h2>
+        <span class="pole" aria-hidden="true"><span></span></span>
+      </div>
+      <div class="pack-grid">
+        <article class="pack">
+          <p class="pack-label">Pack 01</p>
+          <p class="incl">Coupe <span>+</span> Barbe <span>+</span> Soin Classique <span>+</span> Protéine AMAZONAS</p>
+          <p class="pack-price">300 <small>DH</small></p>
+        </article>
+        <article class="pack">
+          <p class="pack-label">Pack 02</p>
+          <p class="incl">Coupe <span>+</span> Barbe <span>+</span> Soin BYPHASSE <span>+</span> Protéine COCOMOCA</p>
+          <p class="pack-price">450 <small>DH</small></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="photo reveal" aria-labelledby="photo-title">
+      <h2 id="photo-title" class="section-title">Le menu</h2>
+      <button class="photo-frame" type="button" data-open-menu aria-label="Agrandir l'image du menu">
+        <img src="images/menu.jpg" alt="Menu Moon Barbershop avec tous les tarifs" width="720" height="1280" loading="lazy">
+        <span class="zoom">Voir en grand</span>
+      </button>
+    </section>
+  </main>
+
+  <footer class="footer wrap" id="infos">
+    <div class="rule" aria-hidden="true"></div>
+    <p class="hours"><span>Ouvert 7j/7</span><span class="sep" aria-hidden="true"></span><span>10:30 – 22:30</span></p>
+    <p class="status" id="status" hidden><i aria-hidden="true"></i><span></span></p>
+    <p class="address">7 Rue Reprise S0104 Mag7 IM-ANG Yacoub Mansour</p>
+    <a class="map-btn" href="https://www.google.com/maps/search/?api=1&amp;query=7%20Rue%20Reprise%20Yacoub%20Mansour" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+      Itinéraire
+    </a>
+    <p class="copy">© <span id="year">2026</span> Moon Barbershop</p>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Menu en grand">
+    <button class="close" type="button" data-close aria-label="Fermer">×</button>
+    <img src="images/menu.jpg" alt="Menu Moon Barbershop avec tous les tarifs">
+  </dialog>
+</body>
+</html>
